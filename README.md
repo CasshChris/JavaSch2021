@@ -1,9 +1,5 @@
 # JavaSch2021
 
-## they done let the GD in the door
-
-🤣
-
-## im so gd you can see it in my eyes 🔱
+This repo will used for my CIS 141
 
 
