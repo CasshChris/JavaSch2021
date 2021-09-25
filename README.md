@@ -2,6 +2,14 @@
 
 This repo will used for my CIS 144
 
-HW DONE 
+## HW DONE 
 
--[x] Welcome.java
+### Wk1
+---
+- [x] Assignment 1.1
+- [x] Assignment 1.3
+- [ ] Assignment 1.5
+- [ ] Assignment 1.8
+
+### Wk2
+---
