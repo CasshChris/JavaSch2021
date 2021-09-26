@@ -1,4 +1,4 @@
-// Assignment 1.5
+// Assignment 1.5 - Compute Expression
 // this program will compute the expression 9.5 x 4.5 - 2.5 x 3 / 45.5 - 3.5 
 
 public class ComputeExpression {

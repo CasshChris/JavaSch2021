@@ -1,4 +1,4 @@
-// Assignment 1.3
+// Assignment 1.3 - Java pattern
 // this program will print a pattern that says "JAVA"
 
 public class patternJava {

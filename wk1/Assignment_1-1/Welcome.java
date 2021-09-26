@@ -1,4 +1,4 @@
-// Assignment 1.1
+// Assignment 1.1 - Welcome 
 // this program will output 3 statement's. "Welcome to Java!", "Welcome to Computer Science", & "Programming is fun"
 
 public class Welcome {

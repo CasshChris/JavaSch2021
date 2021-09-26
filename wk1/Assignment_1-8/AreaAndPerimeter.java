@@ -13,7 +13,7 @@ public class AreaAndPerimeter {
         double area = (radius * radius) * pi;
 
         // output the perimeter & the area
-       System.out.println("The Perimeter of the circle: " + perimeter); 
-       System.out.println("The Area of the circle: " + area); 
+        System.out.println("The Perimeter of the circle: " + perimeter); 
+        System.out.println("The Area of the circle: " + area); 
     }
 }
