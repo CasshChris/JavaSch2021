@@ -6,11 +6,11 @@ public class AreaAndPerimeter {
     public static void main(String[] args) {
         // declare the Radius & declare pi
         double radius = 5.5;
-        double pi = 3.14159;
+        double pi = 3.14;
 
         // calculate the Perimeter & the Area of the circle
         double perimeter = 2 * radius * pi;
-        double area = (radius * radius) * pi;
+        double area = radius * radius * pi;
 
         // output the perimeter & the area
         System.out.println("The Perimeter of the circle: " + perimeter); 
