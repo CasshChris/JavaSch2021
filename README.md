@@ -1,4 +1,4 @@
-# JavaSch2021
+# JavaSch
 
 This repo will used for my CIS 144
 
