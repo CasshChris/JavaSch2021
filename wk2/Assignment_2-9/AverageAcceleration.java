@@ -17,7 +17,7 @@ public class AverageAcceleration {
         double t = scan.nextDouble();
 
         // close scanner
-        scanner.close();
+        scan.close();
 
         // calculate the equation
         double calculation = (v1 - v0) / t;
