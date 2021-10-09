@@ -12,17 +12,17 @@ public class AverageAcceleration {
 
         // prompt the user for the inputs
         System.out.println("Enter v0, v1, and t: ");
-        double v0 = scan.nextDouble();
-        double v1 = scan.nextDouble();
-        double t = scan.nextDouble();
+        double v0 = scan.nextDouble(); // 5.5
+        double v1 = scan.nextDouble(); // 50.91
+        double t = scan.nextDouble(); // 4.5
 
         // close scanner
         scan.close();
 
         // calculate the equation
-        double calculation = (v1 - v0) / t;
+        double acceleration = (v1 - v0) / t;
 
         // output the calculation
-        System.out.printf("The average acceleration is %.3f ", calculation);
+        System.out.printf("The average acceleration is %.3f ", acceleration);
     }
 }

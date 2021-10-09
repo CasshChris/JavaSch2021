@@ -1,5 +1,6 @@
 // Assignment 2.19 - Area of a triangle
 // this program will prompt the user for three points (x1, y1), (x2, y2), (x3, y3) & then using the 
+
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -12,20 +13,23 @@ public class AreaOfATriangle {
         // prompt the user to input the first point
         System.out.println("Enter the first point");
         System.out.print("x1, y1: ");
-        double x1 = scan.nextDouble(); 
-        double y1 = scan.nextDouble();
+        double x1 = scan.nextDouble(); // 1.5 
+        double y1 = scan.nextDouble(); // -3.4
         
         // prompt the user to input the second point
         System.out.println("Enter the second point");
         System.out.print("x2, y2: ");
-        double x2 = scan.nextDouble();
-        double y2 = scan.nextDouble();
+        double x2 = scan.nextDouble(); // 4.6
+        double y2 = scan.nextDouble(); // 5
         
         // prompt the user to input the third point
         System.out.println("Enter the third point");
         System.out.print("x3, y3: ");
-        double x3 = scan.nextDouble();
-        double y3 = scan.nextDouble();
+        double x3 = scan.nextDouble(); // 9.5
+        double y3 = scan.nextDouble(); // -3.4
+
+        // close Scanner object to safe menory
+        scan.close();
 
         // use the findSide() method to find s
         double side1 = findSide(x1, x2, y1, y2);
@@ -35,8 +39,12 @@ public class AreaOfATriangle {
 
         // find the Area of the triangle
         double a = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+
+        // output the area
+        System.out.printf("The area of the triangle is %.1f", a); // 33.6
     }
 
+    // this method will find the distance of the points
     public static double findSide(double a, double b, double c, double d){
         // calculate the intermediate math 
         double xCalc = Math.pow((b - a), 2);

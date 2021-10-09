@@ -15,12 +15,12 @@ public class DistanceOfTwoPoints {
         System.out.println("Enter the first point");
         System.out.print("x1, y1: ");
         double x1 = scan.nextDouble(); // 1.5
-        double y1 = scan.nextDouble(); // 4
+        double y1 = scan.nextDouble(); // -3.4
         
         // prompt the user to input the second point
         System.out.println("Enter the second point");
         System.out.print("x2, y2: ");
-        double x2 = scan.nextDouble(); // -3.9
+        double x2 = scan.nextDouble(); // 4
         double y2 = scan.nextDouble(); // 5
 
         // close scanner to not waste memory
@@ -34,7 +34,7 @@ public class DistanceOfTwoPoints {
         double sqrtCalc = Math.sqrt(xCalc + yCalc); // 8.764...
 
         // output the result of the equation
-        System.out.printf("The distance between two points is %f", sqrtCalc);
+        System.out.printf("The distance between two points is %.2f", sqrtCalc);
 
     }
 }
