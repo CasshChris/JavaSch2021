@@ -34,3 +34,11 @@ This repo will used for my CIS 144
 - [ ] Assignment 5.31
 - [ ] Assignment 5.45
 - [ ] Assignment 5.47
+
+### Wk5
+--- 
+
+- [ ] Assignment (ukn)
+- [ ] Assignment (ukn)
+- [ ] Assignment (ukn)
+- [ ] Assignment (ukn)
