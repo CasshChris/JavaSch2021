@@ -27,13 +27,13 @@ public class solveQuadratic {
         // calculate the discriminate
         double discriminate = Math.pow(b, 2) - (4 * a * c);
         
-        // if the discriminate is less then zero it is negative - no solotion
-        // if the discriminate is more then zero it is positive - 2 solotions
-        // if the discriminate is equal to zero - 1 solotion / the discriminate is removed
+        // if the discriminate is less then zero it is negative - no solution
+        // if the discriminate is more then zero it is positive - 2 solutions
+        // if the discriminate is equal to zero - 1 solution / the discriminate is removed
         if (discriminate > 0) {
             // calculate the roots
-            double r1 = - b + Math.sqrt(discriminate) / (2 * a);
-            double r2 = - b - Math.sqrt(discriminate) / (2 * a);
+            double r1 = -b + Math.sqrt(discriminate) / (2 * a);
+            double r2 = -b - Math.sqrt(discriminate) / (2 * a);
             
             // output the quadratics
             System.out.printf("The equation has two roots: %f and %f ", r1, r2); 
