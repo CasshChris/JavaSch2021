@@ -24,7 +24,7 @@ This repo will used for my CIS 144
 
 - [x] Assignment 3.1
 - [x] Assignment 3.17
-- [ ] Assignment 3.25
+- [x] Assignment 3.25
 - [ ] Assignment 3.33
 
 ### Wk4
