@@ -32,8 +32,8 @@ public class solveQuadratic {
         // if the discriminate is equal to zero - 1 solution / the discriminate is removed
         if (discriminate > 0) {
             // calculate the roots
-            double r1 = -b + Math.sqrt(discriminate) / (2 * a);
-            double r2 = -b - Math.sqrt(discriminate) / (2 * a);
+            double r1 = (-b + Math.sqrt(discriminate)) / (2 * a);
+            double r2 = (-b - Math.sqrt(discriminate)) / (2 * a);
             
             // output the quadratics
             System.out.printf("The equation has two roots: %f and %f ", r1, r2); 
