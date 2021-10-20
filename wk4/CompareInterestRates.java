@@ -22,21 +22,23 @@ public class CompareInterestRates {
         // calculate with getRates() method
         getRates(LAm, yrs);
 
+        scan.close();
+
     }
 
     // this 
     public static void getRates(double loanAmount, double yearsOfLoan) {
-        double intRate = 5.000;
+        double intRate = 0.05000;
 
-        System.out.printf("%-1s%20s%20s\n", "Interest Rate", "Monthly Payment", "Total Payment");
-        while (intRate <= 8.000) {
-            double perIntRate = intRate / 100;
-            double totalPayment = loanAmount * Math.pow((1 + perIntRate), yearsOfLoan);
+        System.out.printf("%-1s%20s%20s%n", "Interest Rate", "Monthly Payment", "Total Payment");
+
+        while (intRate <= 0.08000) {
+            double totalPayment = loanAmount * Math.pow((1 + intRate), yearsOfLoan);
             double monthlyPayment = (totalPayment / 12) / yearsOfLoan;
             String perStr = "%";
             System.out.printf("%8.3f%s%19.2f%22.2f\n", intRate * 100, perStr, monthlyPayment, totalPayment );
-            intRate += 0.0125;
 
+            intRate += 0.001250;
         }
     }
 
