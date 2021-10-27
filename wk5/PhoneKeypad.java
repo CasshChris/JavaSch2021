@@ -7,7 +7,8 @@ public class PhoneKeypad {
         Scanner scan = new Scanner(System.in);
 
         // prompt the user for the phone string
-        System.out.print("Enter Phone Number: ");
+        System.out.print("Enter a string: ");
+        String phoneStr = scan.nextLine();
 
         // close Scammer object
         scan.close();
