@@ -1,7 +1,8 @@
 // Assigment 6.15 - Print a tax label
+// this program will print out a tax table
 import java.lang.Math;
 
-public class taxTabel {
+public class taxTable {
     public static void main(String[] args) {
         System.out.printf("%-25s%-20s%-15s%-15s%-15s\n", ("Taxable Income"), ("Single"), ("Married Joint or Qualify Widow(er)"), ("Married Separate"), ("Head of House hold"));
         

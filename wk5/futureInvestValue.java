@@ -1,4 +1,5 @@
-// Assignment 3.7
+// Assignment 6.7 - future investment value
+// 
 import java.util.Scanner;
 import java.lang.Math;
 

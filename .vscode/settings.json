@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "wk6",
         "wk5",
-        "wk6"
+        "wk4"
     ]
 }
