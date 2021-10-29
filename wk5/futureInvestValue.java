@@ -1,5 +1,5 @@
 // Assignment 6.7 - future investment value
-// 
+// this program will find the future value based on a investment amount & the interest rate
 import java.util.Scanner;
 import java.lang.Math;
 

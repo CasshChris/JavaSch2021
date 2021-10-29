@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class PhoneKeypad {
     public static void main(String[] args) {
+        StringBuilder numberS = new StringBuilder();
         // create Scanner object
         Scanner scan = new Scanner(System.in);
 

@@ -1,7 +1,6 @@
-// Assignment 2.17 - Rock, Paper, & Scissor
+// Assignment 3.17 - Rock, Paper, & Scissor
 import java.util.Scanner;
 import java.util.Random;
-import java.util.Arrays;
 
 public class RPS {
    
@@ -13,36 +12,43 @@ public class RPS {
         Random random = new Random();
 
         // create a random number
-        // int compNumber = random.nextInt(4);
-        int compNumber = 2;
-
-        // create a array to store rock, paper, scissor
-        String[] rpsString = {"Scissors", "Rock", "Paper", "Scissors"};
+        int computerNumber = random.nextInt(3);
+        // int computerNumber = 2; (for debug)
 
         // prompt user to input a number
         System.out.print("Scissors (0), Rock (1), Paper (2) : ");
         int userNumber = scan.nextInt();
+        
+        // use rps() to calculate the results of the game
+        System.out.println(rps(computerNumber, userNumber));
 
-        // if the random number is greater then the users input or if , then the computer won
-        // if the random number is less then the users input, then the user won
-        if (compNumber > userNumber) {
-            System.out.printf("The computers answer is %s. Your answer was %s. The computer won!", rpsString[(int)compNumber], rpsString[(int)userNumber]);
+        // close Scanner object
+        scan.close();
 
-        } else if ((userNumber > compNumber) ^ ((userNumber == 0) && (compNumber == 2))) {
-            System.out.printf("The computers answer is %s. Your answer was %s. The you won!", rpsString[(int)compNumber], rpsString[(int)userNumber]);
+    }
 
-        } else if ((compNumber == 0) && (userNumber == 2)) {
-            compNumber = 3;
-            System.out.printf("The computers answer is %s. Your answer was %s. The computer won!", rpsString[(int)compNumber], rpsString[(int)userNumber]);
+    // 
+    public static String rps(int computerNumber, int userNumber) {
+        // create a array to store rock, paper, scissor
+        String[] rpsString = {"Scissors", "Rock", "Paper"};
 
-        } else if ((userNumber == 0) && (compNumber == 2)) {
-            userNumber = 3;
-            System.out.printf("The computers answer is %s. Your answer was %s. The computer won!", rpsString[(int)compNumber], rpsString[(int)userNumber]);
-
-        } else {
-            System.out.printf("The computers answer is %s. Your answer was %s. Tie.", rpsString[(int)compNumber], rpsString[(int)userNumber]);
-
+        if (computerNumber == userNumber){
+            String tie = "The computers answer is " + rpsString[computerNumber] + ". Your answer was " + rpsString[userNumber] + ". It's a tie! ";
+            return tie;
         }
+
+        String winner = "";
+        // 
+        switch (userNumber) {
+            case 0: 
+                winner = (computerNumber != 1) ? "The computers answer is " + rpsString[computerNumber] + " Your answer was " + rpsString[userNumber] + " You won!" : "The computers answer is " + rpsString[computerNumber] + ". Your answer was " + rpsString[userNumber] + ". You lost!"; break;
+            case 1: 
+                winner = (computerNumber != 2) ? "The computers answer is " + rpsString[computerNumber] + " Your answer was " + rpsString[userNumber] + " You won!" : "The computers answer is " + rpsString[computerNumber] + ". Your answer was " + rpsString[userNumber] + ". You lost!"; break;
+            case 2: 
+                winner = (computerNumber != 0) ? "The computers answer is " + rpsString[computerNumber] + " Your answer was " + rpsString[userNumber] + " You won!" : "The computers answer is " + rpsString[computerNumber] + ". Your answer was " + rpsString[userNumber] + ". You lost!"; break;
+        }
+
+        return winner;
 
     }
 

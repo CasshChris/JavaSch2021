@@ -1,5 +1,5 @@
 // Assigment 6.15 - Print a tax label
-// this program will print out a tax table
+// this program will print out a tax table that shows the tiers & status of a filter
 import java.lang.Math;
 
 public class taxTable {

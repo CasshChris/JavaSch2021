@@ -2,6 +2,7 @@
 // this program will find the mean & deviation of ten points
 import java.util.Scanner;
 import java.lang.Math;
+import java.util.Arrays;
 
 public class ComputeMeanAndDeviation {
 
