@@ -1,6 +1,5 @@
 // Assignment 3.1 - Solve the quadratic
-// 
-
+// this program will solve the quadratic based on three variables(a, b, c), using a method called quadratic
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -19,10 +18,13 @@ public class solveQuadratic {
 
         // use the quadratic() to find the answer 
         quadratic(a, b, c);
+
+        // close Scanner object
+        scan.close();
         
     }
     
-    // this method calculates 
+
     public static void quadratic(double a, double b, double c) {
         // calculate the discriminate
         double discriminate = Math.pow(b, 2) - (4 * a * c);

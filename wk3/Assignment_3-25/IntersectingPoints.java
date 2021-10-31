@@ -1,6 +1,5 @@
 // Assignment 3.25 - Find intersecting point
-// 
-
+// this program will find the the intersection of two points
 import java.util.Scanner;
 
 public class IntersectingPoints {
@@ -19,7 +18,8 @@ public class IntersectingPoints {
         double x4 = scan.nextDouble(); // -1.0
         double y4 = scan.nextDouble(); // -2.0
     
-        // calculate the co efficient 
+        //find the insection using Cramer's rule
+        // calculate the co efficient
         double a = y1 - y2;
         double b = -(x1 - x2);
         double c = y3 - y4;
@@ -32,11 +32,15 @@ public class IntersectingPoints {
         double x = (const1 * d - b * const2) / adBc;
         double y = (a * const2 - const1 * c) / adBc;
     
+        // check to see if the point are parallel
         if (adBc == 0) {
             System.out.println("The two lines are parallel!");
         } else {
             System.out.printf("The intersecting point is at ( %f, %f )", x, y);
         }
+
+        // close Scanner object
+        scan.close();
 
     }
 

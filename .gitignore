@@ -1,2 +1,4 @@
 # ignore docx files
 *.docx
+
+*.zip

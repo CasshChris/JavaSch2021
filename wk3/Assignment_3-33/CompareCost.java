@@ -1,4 +1,4 @@
-// Assignment 3.33 - 
+// Assignment 3.33 - compare the cost of two itemms
 // this program take four inputs (price1, price2), (weight1, weight2) & compare them to find which item (2 items) has a better price
 import java.util.Scanner;
 
@@ -35,6 +35,9 @@ public class CompareCost {
         } else {
             System.out.println("Both prices are equal");
         }
+
+        // close Scanner object
+        scan.close();
 
     }
     
