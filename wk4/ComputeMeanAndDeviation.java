@@ -42,8 +42,10 @@ public class ComputeMeanAndDeviation {
     }
 
     public static double deviation(double[] points) {
-        // 
+        // decare the initial deviation
         double deviation = 0;
+
+        // use a for loop to find the actual deviation
         for (int j = 0; j < points.length; j++){
             deviation += Math.pow(points[j] - mean(points), 2);
         }

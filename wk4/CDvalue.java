@@ -11,23 +11,24 @@ public class CDvalue {
         // prompt user for the initial amount, the annual percentage, & the number of months the cd will be held for
         System.out.println("Calculate CD Value\n");
         System.out.print("Enter the initial deposit amount: ");
-        double ida = scan.nextDouble(); // 10000
+        double initialDepositAmount = scan.nextDouble(); // 10000
         System.out.print("Enter annual percentage yield: ");
-        double ap = scan.nextDouble(); // 5.75
+        double annualPercentage = scan.nextDouble(); // 5.75
         System.out.print("Enter maturity period(number of months): ");
-        int mp = scan.nextInt(); // 18
+        int maturityPeriod = scan.nextInt(); // 18
 
-        // for header
-        String m = "Month"; String cdv = "CD Value";
-        System.out.printf("%-10s%s%n", m, cdv);
+        // create a header
+        String mouth = "Month"; 
+        String cdValue = "CD Value";
+        System.out.printf("%-10s%s%n", mouth, cdValue);
 
-        // 
-        for(int j = 1; j <= mp; j++){
-           double calc = ida + ida * ap / 1200;
+        // Use a for loop to calculate the value over time
+        for(int j = 1; j <= maturityPeriod; j++){
+           double value = initialDepositAmount + initialDepositAmount * annualPercentage / 1200;
 
-           System.out.printf("%-10d$%.2f%n", j, calc);
+           System.out.printf("%-10d$%.2f%n", j, value);
 
-           ida = calc;
+           initialDepositAmount = value;
         }
 
         scan.close();

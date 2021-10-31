@@ -33,18 +33,20 @@ public class creditCardValidation {
 
     // Return true if the card number is valid
     public static boolean isValid(long number) {
-        // if the number 
+        // if the number greater then 16 or less then 13 the card number is not valid
         if (getSize(number) > 16 || getSize(number) < 13) {
             return false;
         }
 
-        // 
+        // check the first number to see if the card is vise, mastercard, discover, or america express
         for (int i = 0; i < prefix.length; i++) {
-
+            // if the number is in the prefix array, then move on 
             if (getPrefix(number, prefix[i]) == prefix[i]){
                 // prefix match
                 break;
             }
+
+            // if the number is not in the prefix then it is not valid
             if (i < prefix.length - 1) {
                 // no prefix return false
                 return false;
@@ -52,6 +54,7 @@ public class creditCardValidation {
 
         }
 
+        
         int sum = sumOfDoubleEvenPlace(number) + sumOfOddPlace(number);
 
         return sum % 10 == 0;
