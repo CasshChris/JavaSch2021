@@ -1,5 +1,5 @@
 // Assignment 3.31 - Calculate CD Value
-// this program will use the initial deposit amount, the annual percentage, & the maturity period
+// this program will use the initial deposit amount, the annual percentage, & the maturity period to find the CD amount over time
 import java.util.Scanner;
 
 public class CDvalue {
@@ -22,15 +22,18 @@ public class CDvalue {
         String cdValue = "CD Value";
         System.out.printf("%-10s%s%n", mouth, cdValue);
 
-        // Use a for loop to calculate the value over time
+        // Use a for loop to calculate the amount with interest over time
         for(int j = 1; j <= maturityPeriod; j++){
            double value = initialDepositAmount + initialDepositAmount * annualPercentage / 1200;
 
+           // output the value
            System.out.printf("%-10d$%.2f%n", j, value);
 
+           // change the value of the deposit amount
            initialDepositAmount = value;
         }
 
+        // close Scanner object
         scan.close();
     }
     

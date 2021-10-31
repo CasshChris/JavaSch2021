@@ -15,30 +15,39 @@ public class CompareInterestRates {
         
         // get the data of the loan
         System.out.print("Loan Amount: $");
-        double LAm = scan.nextDouble(); // $10000
+        double loanAmount = scan.nextDouble(); // $10000
         System.out.print("Number of Years: ");
-        double yrs = scan.nextDouble(); // 5 years
+        double years = scan.nextDouble(); // 5 years
         
         // calculate with getRates() method
-        getRates(LAm, yrs);
+        getRates(loanAmount, years);
 
+        // close Scanner object
         scan.close();
 
     }
 
-    // this 
     public static void getRates(double loanAmount, double yearsOfLoan) {
-        double intRate = 0.05000;
+        // declare the starting interest rate
+        double interestRate = 0.05000;
 
+        // print header
         System.out.printf("%-1s%20s%20s%n", "Interest Rate", "Monthly Payment", "Total Payment");
 
-        while (intRate <= 0.08000) {
-            double totalPayment = loanAmount * Math.pow((1 + intRate), yearsOfLoan);
-            double monthlyPayment = (totalPayment / 12) / yearsOfLoan;
-            String perStr = "%";
-            System.out.printf("%8.3f%s%19.2f%22.2f\n", intRate * 100, perStr, monthlyPayment, totalPayment );
+        // use a while loop to calculate the Interest Rate, the Monthly Payment, & the Total Payment
+        while (interestRate <= 0.0810000) {
+            // find the total payment amount
+            double totalPayment = loanAmount * Math.pow((1 + interestRate), yearsOfLoan);
 
-            intRate += 0.001250;
+            // calculate the monthly amount
+            double monthlyPayment = (totalPayment / 12) / yearsOfLoan;
+
+            // output the formatted interest rate, the monthly payment, & the total amount
+            String percentString = "%";
+            System.out.printf("%8.3f%s%19.2f%22.2f\n", interestRate * 100, percentString, monthlyPayment, totalPayment);
+
+            // for each loop the interest rate will go up ny 1/8
+            interestRate += 0.001250;
         }
     }
 
