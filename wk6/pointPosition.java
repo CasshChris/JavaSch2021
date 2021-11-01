@@ -15,13 +15,13 @@ public class pointPosition {
         double x2 = scan.nextDouble(); // 1.5, 3, 1, 1
         double y2 = scan.nextDouble(); // 1.5, 3, 1.5, -1
 
-        if (rightOfTheLine(x0,y0,x1,y1,x2,y2)) {
+        if (rightOfTheLine(x0,y0,x1,y1,x2,y2)) { // right of line
             System.out.printf("(%.1f, %.1f) is on the right side of the line from (%.1f, %.1f) to (%.1f, %.1f)", x2, y2, x0, y0, x1, y1);
-        } else if (leftOfTheLine(x0, y0, x1, y1, x2, y2)) {
+        } else if (leftOfTheLine(x0, y0, x1, y1, x2, y2)) { // left on line
             System.out.printf("(%.1f, %.1f) is on the left side of the line from (%.1f, %.1f) to (%.1f, %.1f)", x2, y2, x0, y0, x1, y1);
-        } else if (onTheLineSegment(x0,y0,x1,y1,x2,y2)) {
+        } else if (onTheLineSegment(x0,y0,x1,y1,x2,y2)) { // on the line segment
             System.out.printf("(%.1f, %.1f) is on the line segment from (%.1f, %.1f) to (%.1f, %.1f)", x2, y2, x0, y0, x1, y1);
-        } else if (onTheSameLine(x0,y0,x1,y1,x2,y2)) {
+        } else if (onTheSameLine(x0,y0,x1,y1,x2,y2)) { // on the same line
             System.out.printf("(%.1f, %.1f) is on the same line from (%.1f, %.1f) to (%.1f, %.1f)", x2, y2, x0, y0, x1, y1);
         }
 

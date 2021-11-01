@@ -1,5 +1,5 @@
 // Assignment 6.31 - Credit card number validation
-// this program will find the 
+// this program will check to see if a card is valid or invalid based on the size of the card & the prefix on the card
 import java.util.Scanner;
 
 public class creditCardValidation {
@@ -60,7 +60,7 @@ public class creditCardValidation {
         return sum % 10 == 0;
     }
 
-    /** Return true if the digit d is a prefix for number */
+    // Return true if the digit d is a prefix for number
     public static boolean prefixMatched(long number, int d) {
 
         if (d > number) {
@@ -74,8 +74,8 @@ public class creditCardValidation {
     }
 
 
-    /** Return the first k number of digits from number. If the
-     * number of digits in number is less than k, return number. */
+    // Return the first k number of digits from number. If the
+    // number of digits in number is less than k, return number
     public static long getPrefix(long number, int k) {
 
         if (prefixMatched(number, k)){
