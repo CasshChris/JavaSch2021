@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class creditCardValidation {
 
+    // declare the card prefixes
     public static final int visa_prefix = 4;
     public static final int masterCard_prefix = 5;
     public static final int americanExpress_prefix = 37;
@@ -74,12 +75,12 @@ public class creditCardValidation {
     }
 
 
-    // Return the first k number of digits from number. If the
-    // number of digits in number is less than k, return number
-    public static long getPrefix(long number, int k) {
+    // Return the first n number of digits from number. If the
+    // number of digits in number is less than n, return number
+    public static long getPrefix(long number, int n) {
 
-        if (prefixMatched(number, k)){
-            return k;
+        if (prefixMatched(number, n)){
+            return n;
         }
 
         return number;
@@ -100,8 +101,10 @@ public class creditCardValidation {
 
     // Return sum of odd-place digits in number
     public static int sumOfOddPlace(long number) {
-
+        // declare the initial sum
         int sum = 0;
+
+        // 
         while (number > 0) {
 
             int digit = (int) (number % 10);
@@ -109,6 +112,7 @@ public class creditCardValidation {
             sum += digit;
             number /= 100;
         }
+
         return sum;
     }
 
@@ -120,7 +124,7 @@ public class creditCardValidation {
 
     // Return the number of digits in d
     public static int getSize(long d) {
-        // declare the size
+        // declare initial size
         int size = 0;
 
         // the digits are greater then

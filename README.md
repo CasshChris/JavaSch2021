@@ -40,5 +40,12 @@ This repo will used for my CIS 144
 
 - [x] Assignment 6.9
 - [x] Assignment 6.7
-- [ ] Assignment 6.15
+- [x] Assignment 6.15
 - [x] Assignment 6.21
+
+### Wk6
+---
+
+- [x] Assignment 6.31
+- [x] Assignment 6.35
+- [x] Assignment 6.39
