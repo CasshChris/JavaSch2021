@@ -34,7 +34,7 @@ public class creditCardValidation {
 
     // Return true if the card number is valid
     public static boolean isValid(long number) {
-        // if the number greater then 16 or less then 13 the card number is not valid
+        // if the number greater then 16 or less then 13 the card number is invalid
         if (getSize(number) > 16 || getSize(number) < 13) {
             return false;
         }
@@ -47,7 +47,7 @@ public class creditCardValidation {
                 break;
             }
 
-            // if the number is not in the prefix then it is not valid
+            // if the number is not in the prefix then it is invalid
             if (i < prefix.length - 1) {
                 // no prefix return false
                 return false;
@@ -70,19 +70,17 @@ public class creditCardValidation {
 
         long difference = (getSize(number) - getSize(d));
 
-        return d == (int)(number / Math.pow(10, difference));
-
+        return d == (int)(number / Math.pow(10, difference)); // true
     }
 
 
-    // Return the first n number of digits from number. If the
-    // number of digits in number is less than n, return number
-    public static long getPrefix(long number, int n) {
+    // Return the first k number of digits from number
+    // If the number of digits in number is less than k, return number
+    public static long getPrefix(long number, int k) {
 
-        if (prefixMatched(number, n)){
-            return n;
+        if (prefixMatched(number, k)){
+            return k;
         }
-
         return number;
     }
 
@@ -116,8 +114,8 @@ public class creditCardValidation {
         return sum;
     }
 
-    // Return this number if it is a single digit, otherwise,
-    // return the sum of the two digits
+    // Return this number if it is a single digit
+    // Otherwise, return the sum of the two digits
     public static int getDigit(int number) {
         return (number > 9) ? number - 9 : number;
     }
