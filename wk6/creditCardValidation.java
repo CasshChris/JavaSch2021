@@ -55,7 +55,7 @@ public class creditCardValidation {
 
         }
 
-        
+        // calculate the sum        
         int sum = sumOfDoubleEvenPlace(number) + sumOfOddPlace(number);
 
         return sum % 10 == 0;
