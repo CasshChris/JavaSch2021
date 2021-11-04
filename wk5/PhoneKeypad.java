@@ -44,7 +44,7 @@ public class PhoneKeypad {
     }
 
     public static boolean isNumeric(char character) { // check to see if the character is a number between 0 - 9
-        return (character >= '0' && character <= '9');
+        return ('0' <= character && character <= '9');
     }
 
     public static boolean isLetter(char character) { // check to see if the character is 

@@ -1,5 +1,5 @@
 // Assignment 6.39 - Point Postition
-// This program will find the position of a point based on three points
+// This program will find the position of the second point
 import java.util.Scanner;
 
 public class pointPosition {
