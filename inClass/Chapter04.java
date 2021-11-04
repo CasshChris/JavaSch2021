@@ -1,3 +1,11 @@
+/*
+ * Chapter 4 Project (in class)
+ * Group 3 - Christian Gema, Sudan Gaines, Gheorghe Gheata, Chrisiian Alvarez
+ * 
+ * Project description:
+ * This program will manipulate character data in ten different methods
+ */
+
 public class Chapter04 {
     /*
     **for debug**
@@ -43,13 +51,13 @@ public class Chapter04 {
 
     // will return the lower case of the character
     public static char toLowerCase(char ch){
-        // add 32 to get the Ascii lower case
+        // add 32 to get the Ascii lower case character
         return ch += 32;
     }
     
     // will return the upper case of the character
     public static char toUpperCase(char ch){
-        // subtract 32 to get the Ascii upper case
+        // subtract 32 to get the Ascii upper case character
         return ch -= 32;
     }
 
