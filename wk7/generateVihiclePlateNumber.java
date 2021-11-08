@@ -1,3 +1,6 @@
+// Assignment 4.25 - Generate a vihicle plate number 
+// this program will generate & output a plate number for a car
+
 public class generateVihiclePlateNumber {
     public static void main(String[] args) {
         // create StringBuilder object
