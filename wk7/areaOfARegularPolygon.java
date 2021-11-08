@@ -9,9 +9,9 @@ public class areaOfARegularPolygon {
         Scanner scan = new Scanner(System.in);
 
         // prompt the user for the size of a side & the number of sides
-        System.out.print("Enter the number of sides: ");
+        System.out.print("Enter the number of sides: "); // 5
         double sideNumber = scan.nextDouble();
-        System.out.print("Enter the size: ");
+        System.out.print("Enter the size: "); // 6.5
         double sideSize = scan.nextDouble();
         
         // output the getPolygonArea()
@@ -26,6 +26,7 @@ public class areaOfARegularPolygon {
         // compute & find the polygon
         double area = (n + Math.pow(s, 2)) / (4 * Math.tan(3.14 / n));
 
+        // return the area of the polygon
         return area;
     }
 }
