@@ -1,5 +1,5 @@
 // Assignment 4.5 - Area of a Regular Polygon
-// this program will find the regular polygon using the number of sides & the size of a side
+// this program will find the area of a regular polygon using the number of sides & the size of a side
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -23,7 +23,7 @@ public class areaOfARegularPolygon {
     }
 
     public static double getPolygonArea(double n, double s){
-        // calculate & find the polygon
+        // compute & find the polygon
         double area = (n + Math.pow(s, 2)) / (4 * Math.tan(3.14 / n));
 
         return area;
