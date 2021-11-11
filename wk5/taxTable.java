@@ -1,24 +1,32 @@
-// Assigment 6.15 - Print a tax label
-// this program will print out a tax table that shows the tiers & status of a filter
+// Assigment 6.15 - Print a tax table
+// this program will print out a tax table that shows the tiers & status of a tax filer
 import java.lang.Math;
 
 public class taxTable {
     public static void main(String[] args) {
-        System.out.printf("%-25s%-20s%-15s%-15s%-15s\n", ("Taxable Income"), ("Single"), ("Married Joint or Qualify Widow(er)"), ("Married Separate"), ("Head of House hold"));
+        // Header strings
+        String TAX_INCOME = "Taxable Income";
+        String SINGLE = "Single";
+        String MARRIED_JOINT = "Married Joint";
+        String MARRIED_SEPERATE = "Married Separate";
+        String HOUSEHOLD_HEAD = "Head of house";
+
+        // Header
+        System.out.printf("%-17s%-17s%-3s%21s%16s\n", TAX_INCOME, SINGLE, MARRIED_JOINT, MARRIED_SEPERATE, HOUSEHOLD_HEAD);
         
-        for (int incomeAmount = 50000; incomeAmount <= 60000; incomeAmount += 50){
+        // Use a for loop to print the 
+        for (int incomeAmount = 50000; incomeAmount <= 60000; incomeAmount += 50) {
             System.out.printf("$%-15d $%-15d $%-15d $%-15d $%-15d\n", incomeAmount, Math.round(computeTax(0, incomeAmount)), Math.round(computeTax(1, incomeAmount)), Math.round(computeTax(2, incomeAmount)), Math.round(computeTax(3, incomeAmount)));
         }
-
         
     }
  
-    public static double computeTax(int status, double taxableIncome){
+    public static double computeTax(int status, double taxableIncome) {
+        // declare tax 
         double tax = 0;
 
-        /**
-         * Using the if statement, the filer will be categorized by status. Then, the computation will be run based on which tier the total taxable income falls in. 
-         */
+        // using a if statement, the program will filer by status
+        // then, the program will calculate based on the tier of the total taxable income the user is in
         if (status == 0) { // Compute tax for single filers
             if (taxableIncome <= 8350) {
                 tax = taxableIncome * 0.10;
@@ -33,7 +41,7 @@ public class taxTable {
             } else {
                 tax = 8350 * 0.10 + (33950 - 8350) * 0.15 + (82250 - 33950) * 0.25 + (171550 - 82250) * 0.28 + (372950 - 171550) * 0.33 + (taxableIncome - 372950) * 0.35;
             }
-        } else if (status == 1) {
+        } else if (status == 1) { // Compute tax for joint filers
             if (taxableIncome <= 16700.0) {
                 tax = taxableIncome * 0.1;
             } else if (taxableIncome <= 67900.0) {
@@ -47,8 +55,7 @@ public class taxTable {
             } else {
                 tax = 90562.5 + (taxableIncome - 372950.0) * 0.35;
             }
-
-        } else if (status == 2) {
+        } else if (status == 2) { // Compute tax for seperated filers
             if (taxableIncome <= 8350.0) {
                 tax = taxableIncome * 0.1;
             } else if (taxableIncome <= 33950.0) {
@@ -62,8 +69,7 @@ public class taxTable {
             } else {
                 tax = 50447.25 + (taxableIncome - 186475.0) * 0.35;
             }
-
-        } else if (status == 3) {
+        } else if (status == 3) { // Compute tax for household head filers
             if (taxableIncome <= 11950.0) {
                 tax = taxableIncome * 0.1;
             } else if (taxableIncome <= 45500.0) {
@@ -77,12 +83,10 @@ public class taxTable {
             } else {
                 tax = 104892.5 + (taxableIncome - 372950.0) * 0.35;
             }
-
-        } else {
-            System.out.println("Invalid status...");
-            System.exit(1);
         }
-        return  tax /*(tax * 100) / 100.0*/;
+
+        // return tax
+        return tax;
     }
     
 }

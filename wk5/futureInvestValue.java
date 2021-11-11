@@ -11,13 +11,14 @@ public class futureInvestValue {
         // prompt the user for the base amount & the interest rate
         System.out.println("Calculate Futures Investment");
         System.out.print("Enter the amount invested: ");
-        double investmentAmount = scan.nextDouble();
+        double investmentAmount = scan.nextDouble(); // 
         System.out.print("Enter the annual interest rate: ");
-        double interestRate = scan.nextDouble();
+        double interestRate = scan.nextDouble(); // 
 
         // convert the annual rate to monthly rate
         double monthlyRate = (interestRate / 12) / 100;
 
+        // get the future investment value
         getFormatted(investmentAmount, monthlyRate);
 
         // close Scanner object

@@ -1,5 +1,5 @@
 // Assignment 6.21 - Phone Keypad
-// 
+// this program will convert a phone string 
 import java.util.Scanner;
 
 public class PhoneKeypad {
@@ -9,8 +9,8 @@ public class PhoneKeypad {
 
         // prompt the user for a phone number
         System.out.println("Convert string to numbers");
-        System.out.print("Enter a string: ");
-        String phoneStr = scan.nextLine();
+        System.out.print("Enter a string: "); 
+        String phoneStr = scan.nextLine(); // 1-800-Flowers, 1800flowers
 
         // output the reformatted number
         System.out.println(reformatNumber(phoneStr));
@@ -22,7 +22,7 @@ public class PhoneKeypad {
 
     public static String reformatNumber(String str) {
         // create StringBuilder object
-        StringBuilder numbrString = new StringBuilder();
+        StringBuilder numberString = new StringBuilder();
         
         // use a for loop to go through each letter to create the new string
         for (int i = 0; i < str.length(); i++) {
@@ -30,17 +30,17 @@ public class PhoneKeypad {
             char character = str.charAt(i);
 
             if (isNumeric(character)){ // if the character is a number then do this
-                numbrString.append(character);
+                numberString.append(character);
             } else if (isLetter(character)){ // if the character is a letter then do this 
-                numbrString.append(getNumber(character));
+                numberString.append(getNumber(character));
             } else if (isLetter(character, '-')) { // if the character is a dash Then do this 
-                numbrString.append(character);
+                numberString.append(character);
             }
 
         }
         
         // return the new string
-        return numbrString.toString();
+        return numberString.toString();
     }
 
     public static boolean isNumeric(char character) { // check to see if the character is a number between 0 - 9
@@ -69,7 +69,7 @@ public class PhoneKeypad {
             int n = character - 'A';
             number += (n / 3);
 
-            // return the 
+            // return number
             return number;
         }
 
