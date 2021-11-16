@@ -67,7 +67,13 @@ This repo will used for my CIS 144 homeword
 
 ## Extras 
 
-#### inClass
+### inClass
+---
 
-- [x] Project 04
+- [x] Chpater04
 - [x] Exercise05_07
+
+### Mid_term
+---
+
+- [x] Project_01

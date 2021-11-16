@@ -1,5 +1,5 @@
 // Assigntment 6.9 - Conversions between feet & meters
-// this program will convert feet to meters & meters to feet
+// this program will convert feet (1 - 10) to meters & meters (20 - 60) to feet 
 
 public class feetMetersConvertion {
     
