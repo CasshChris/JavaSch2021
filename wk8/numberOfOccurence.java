@@ -26,13 +26,20 @@ public class numberOfOccurence {
             integers[i] = number;
         }
         
+        int[] memo = {};
         // 
         for (int j: integers) {
             if (isInArray(integers, j)) {
                 if (Occurrence(integers, j) > 1) {
-                    System.out.println(j + " occures " + Occurrence(integers, j) + " times");
+                    memo[j] = Occurrence(integers, j);
+                    if (isInArray(memo, j)) {
+                        System.out.println(j + " occures " + Occurrence(integers, j) + " times");
+                    }
                 } else {
-                    System.out.println(j + " occures " + Occurrence(integers, j) + " time");
+                    memo[j] = Occurrence(integers, j);
+                    if (isInArray(memo, j)) {
+                       System.out.println(j + " occures " + Occurrence(integers, j) + " time");
+                    }
                 }
             }
         }
