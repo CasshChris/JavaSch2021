@@ -61,11 +61,21 @@ This repo will used for my CIS 144 homeword
 ### wk8
 ---
 
-- [ ] Assignment 7.3
-- [ ] Assignment 7.11
-- [ ] Assignment 7.31
+- [x] Assignment 7.3
+- [x] Assignment 7.11
+- [x] Assignment 7.31
+
+### wk9
+---
+
+- [x] Assignment 9.3
+- [x] Assignment 9.7
+- [x] Assignment 9.11
+
 
 ## Extras 
+---
+- [x] [Main](testing_class/Main.java) class for testing
 
 ### inClass
 ---
