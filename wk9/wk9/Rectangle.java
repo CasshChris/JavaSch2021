@@ -4,14 +4,19 @@ package wk9;
 
 public class Rectangle {
 
-    public double width;
-    public double height;
+    private double width;
+    private double height;
 
     public Rectangle() {
         this.setWidth(1.0);
         this.setHeight(1.0);
     }
-    
+
+    public Rectangle(double width, double height) {
+        this.setWidth(width);
+        this.setHeight(height);
+    }
+
     // getters
     public double getHeight() {
         return height;
@@ -28,13 +33,6 @@ public class Rectangle {
 
     public double getWidth() {
         return width;
-    }
-
-    
-
-    public Rectangle(double width, double height) {
-        this.setWidth(width);
-        this.setHeight(height);
     }
 
     // return area
