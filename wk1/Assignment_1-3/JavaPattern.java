@@ -1,7 +1,7 @@
 // Assignment 1.3 - Java pattern
 // this program will print a pattern that says "JAVA"
 
-public class patternJava {
+public class JavaPattern {
 
     public static void main(String[] agrs) {
         // The pattern will use four lines of output to make the pattern
