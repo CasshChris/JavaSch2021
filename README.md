@@ -23,67 +23,70 @@ This repository will used to store the source code for my assigments in CIS 144
 ### Wk3
 ---
 
-- [x] Assignment 3.1
-- [x] Assignment 3.17
-- [x] Assignment 3.25
-- [x] Assignment 3.33
+- [x] [Assignment 3.1](wk3/Assignment_3-1/solveQuadratic.java "solveQuadratic.java")
+- [x] [Assignment 3.17](wk3/Assignment_3-17/RPS.java "RPS.java")
+- [x] [Assignment 3.25](wk3/Assignment_3-25/IntersectingPoints.java "IntersectingPoints.java")
+- [x] [Assignment 3.33](wk3/Assignment_3-33/CompareCost.java "CompareCost.java")
 
 ### Wk4
 ---
 
-- [x] Assignment 5.21
-- [x] Assignment 5.31
-- [x] Assignment 5.45
-- [x] Assignment 5.47
+- [x] [Assignment 5.21](wk4/CompareInterestRates.java "CompareInterestRates.java")
+- [x] [Assignment 5.31](wk4/CDvalue.java "CDvalue.java")
+- [x] [Assignment 5.45](wk4/ComputeMeanAndDeviation.java "ComputeMeanAndDeviation.java")
+- [x] [Assignment 5.47](wk4/ISBN_13.java "ISBN_13.java")
 
 ### Wk5
 ---
 
-- [x] Assignment 6.9
-- [x] Assignment 6.7
-- [x] Assignment 6.15
-- [x] Assignment 6.21
+- [x] [Assignment 6.7](wk5/futureInvestValue.java "futureInvestValue.java")
+- [x] [Assignment 6.9](wk5/feetMetersConvertion.java "feetMetersConvertion.java")
+- [x] [Assignment 6.15](wk5/taxTable.java "taxTable.java")
+- [x] [Assignment 6.21](wk5/PhoneKeypad.java "PhoneKeypad.java")
 
 ### Wk6
 ---
 
-- [x] Assignment 6.31
-- [x] Assignment 6.35
-- [x] Assignment 6.39
+- [x] [Assignment 6.31](wk6/creditCardValidation.java "creditCardValidation.java")
+- [x] [Assignment 6.35](wk6/areaOfPolygon.java "areaOfPolygon.java")
+- [x] [Assignment 6.39](wk6/pointPosition.java "pointPosition.java")
 
 ### wk7
 ---
 
-- [x] Assignment 4.5
-- [x] Assignment 4.23
-- [x] Assignment 4.25
+- [x] [Assignment 4.5](wk7/areaOfARegularPolygon.java "areaOfARegularPolygon.java")
+- [x] [Assignment 4.23](wk7/payroll.java "payroll.java")
+- [x] [Assignment 4.25](wk7/generateVihiclePlateNumber.java "generateVihiclePlateNumber.java")
 
 ### wk8
 ---
 
-- [x] Assignment 7.3
-- [x] Assignment 7.11
-- [x] Assignment 7.31
+- [x] [Assignment 7.3]()
+- [x] [Assignment 7.11]()
+- [x] [Assignment 7.31]()
 
 ### wk9
 ---
 
-- [x] Assignment 9.3
-- [x] Assignment 9.7
-- [x] Assignment 9.11
+- [x] [Assignment 9.3](wk9/wk9/Rectangle.java "Rectangle.java")
+- [x] [Assignment 9.7](wk9/wk9/Account.java "Account.java")
+- [x] [Assignment 9.11](wk9/wk9/LinearEquation.java "LinearEquation.java")
+
+### wk10
+---
+
+- [x] [Assignment ]()
+- [x] [Assignment ]()
+- [x] [Assignment ]()
 
 
 ## Extras 
 ---
-- [x] [Main](testing_class/Main.java) class for testing
+~~ for Testing
+- [x] [Main.java](testing_class/Main.java "Main.java")
 
 ### inClass
 ---
 
-- [x] Chpater04
-- [x] Exercise05_07
-
-### Mid_term
----
-
-- [x] Project_01
+- [x] [Chpater04](inClass/Chapter04.java "Chapter04.java")
+- [x] [Exercise05_07](inClass/Exercise05_07.java "Exercise05_07.java")

@@ -1,6 +1,6 @@
-package wk9;
 // Assignment 9.7 - Account class
 // this program will create an account for a user
+package wk9;
 import java.util.Date; // ~ Depreciated ~ Some issues 
 
 public class Account {

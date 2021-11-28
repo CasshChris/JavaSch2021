@@ -1,6 +1,6 @@
-package wk9;
 // Assignment 9.1 - Rectangle class
 // this program will compute measurements for a rectangle
+package wk9;
 
 public class Rectangle {
 
