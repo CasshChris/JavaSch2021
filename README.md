@@ -82,7 +82,7 @@ This repository will used to store the source code for my assigments in CIS 144
 
 ## Extras 
 ---
-~~ for Testing
+~~ for Testing ~~
 - [x] [Main.java](testing_class/Main.java "Main.java")
 
 ### inClass
