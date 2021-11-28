@@ -19,6 +19,7 @@ public class LinearEquation {
         this.d = d;
         this.e = e;
         this.f = f;
+        // [9.0, 4.0, 3.0, -5.0, -6.0, -21.0]
 
     }
 

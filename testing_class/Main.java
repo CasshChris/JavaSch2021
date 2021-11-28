@@ -7,7 +7,8 @@ import wk9.*;
 
 public class Main {
     public static void main(String[] args) {
-        /* ~ Rectangle Class ~ */
+
+        // ~ Rectangle Class ~ 
         System.out.println("\n ~~ Retangle Class ~~ \n");
         Rectangle rec = new Rectangle();
         Rectangle rec1 = new Rectangle(4, 40);
@@ -29,8 +30,8 @@ public class Main {
         System.out.printf("the Perimeter of the Rectangle 1 is %f \n", rec1.getPerimeter());
         System.out.printf("the Perimeter of the Rectangle 2 is %f \n", rec2.getPerimeter());
         
-        /* ~ Account Class ~ */
-        System.out.println("\n ~~ Account Class ~~");
+        // ~ Account Class ~ 
+        System.out.println("\n ~~ Account Class ~~ \n");
         Account acc = new Account(1122, 20000);
         acc.setAnnaulInterestRate(4.5);
         
@@ -51,10 +52,17 @@ public class Main {
         System.out.printf("\tMonthly interest rate: %.2f \n", acc.getMouthlyInterestRate());
         System.out.println("\tDate account was created: " + acc.getDateCreated());
         
-        /* ~ Linear Equation Class ~ */
-        System.out.println("\n ~~ Linear Equation Class ~~");
+        // ~ Linear Equation Class ~
+        System.out.println("\n ~~ Linear Equation Class ~~ \n");
 
-        // LinearEquation lin = new LinearEquation();
-        
+        LinearEquation lin = new LinearEquation(9.0, 4.0, 3.0, -5.0, -6.0, -21.0);
+
+        if (lin.isSolvable()) {
+            System.out.printf("X is %1f & Y is %2f", lin.getX(), lin.getY());
+        } else {
+            System.out.println("The equation has no solution.");
+        }
+
+    
     }
 }

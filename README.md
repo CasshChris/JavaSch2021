@@ -5,6 +5,7 @@ This repository will used to store the source code for my assigments in CIS 144
 ## Homework todo list
 
 ### Wk1
+
 ---
 
 - [x] [Assignment 1.1](wk1/Assignment_1-1/Welcome.java "Welcome.java")
@@ -13,6 +14,7 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 1.8](wk1/Assignment_1-8/AreaAndPerimeter.java "AreaAndPerimeter.java")
 
 ### Wk2
+
 ---
 
 - [x] [Assignment 2.9](wk2/Assignment_2-9/AverageAcceleration.java "AverageAcceleration.java")
@@ -21,6 +23,7 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 2.21](wk2/Assignment_2-21/CalculateFuturesValue.java "CalculateFuturesValue.java")
 
 ### Wk3
+
 ---
 
 - [x] [Assignment 3.1](wk3/Assignment_3-1/solveQuadratic.java "solveQuadratic.java")
@@ -29,6 +32,7 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 3.33](wk3/Assignment_3-33/CompareCost.java "CompareCost.java")
 
 ### Wk4
+
 ---
 
 - [x] [Assignment 5.21](wk4/CompareInterestRates.java "CompareInterestRates.java")
@@ -37,6 +41,7 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 5.47](wk4/ISBN_13.java "ISBN_13.java")
 
 ### Wk5
+
 ---
 
 - [x] [Assignment 6.7](wk5/futureInvestValue.java "futureInvestValue.java")
@@ -45,6 +50,7 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 6.21](wk5/PhoneKeypad.java "PhoneKeypad.java")
 
 ### Wk6
+
 ---
 
 - [x] [Assignment 6.31](wk6/creditCardValidation.java "creditCardValidation.java")
@@ -52,6 +58,7 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 6.39](wk6/pointPosition.java "pointPosition.java")
 
 ### wk7
+
 ---
 
 - [x] [Assignment 4.5](wk7/areaOfARegularPolygon.java "areaOfARegularPolygon.java")
@@ -59,13 +66,15 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 4.25](wk7/generateVihiclePlateNumber.java "generateVihiclePlateNumber.java")
 
 ### wk8
+
 ---
 
-- [x] [Assignment 7.3]()
-- [x] [Assignment 7.11]()
-- [x] [Assignment 7.31]()
+- [x] [Assignment 7.3](wk8/numberOfOccurence.java "numberOfOccurence.java")
+- [x] [Assignment 7.11](wk8/computeDeviation.java "computeDeviation.java")
+- [x] [Assignment 7.31](wk8/mergeTwoList.java "mergeTwoList.java")
 
 ### wk9
+
 ---
 
 - [x] [Assignment 9.3](wk9/wk9/Rectangle.java "Rectangle.java")
@@ -73,19 +82,21 @@ This repository will used to store the source code for my assigments in CIS 144
 - [x] [Assignment 9.11](wk9/wk9/LinearEquation.java "LinearEquation.java")
 
 ### wk10
+
 ---
 
-- [x] [Assignment ]()
-- [x] [Assignment ]()
-- [x] [Assignment ]()
+- [x] [Assignment 10.3](wk10/MyIntager.java "MyIntager.java")
+- [x] [Assignment 10.13]()
 
+## Extras
 
-## Extras 
 ---
 ~~ for Testing ~~
+
 - [x] [Main.java](testing_class/Main.java "Main.java")
 
 ### inClass
+
 ---
 
 - [x] [Chpater04](inClass/Chapter04.java "Chapter04.java")
