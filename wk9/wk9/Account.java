@@ -42,6 +42,7 @@ public class Account {
      *      This group of methods will get the values for the id, date, balance, & the annual interest rate & return them
     */
     public Date getDateCreated() {
+        dateCreated = new Date();
         return dateCreated;
     }
 
