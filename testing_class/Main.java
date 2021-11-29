@@ -3,11 +3,12 @@
  */
 
 /** imports */
-import wk9.*;
+// import wk9.*;
+import wk10.*;
 
 public class Main {
     public static void main(String[] args) {
-
+/*
         // ~ Rectangle Class ~ 
         System.out.println("\n ~~ Retangle Class ~~ \n");
         Rectangle rec = new Rectangle();
@@ -62,7 +63,9 @@ public class Main {
         } else {
             System.out.println("The equation has no solution.");
         }
+*/
+        MyIntager inter = new MyIntager(2);
 
-    
+        System.out.print(inter.isEven());
     }
 }

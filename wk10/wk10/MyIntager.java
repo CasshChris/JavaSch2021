@@ -21,4 +21,21 @@ public class MyIntager {
         return this.value;
     }
 
+    /* ~ Booleans ~ */
+    public boolean isEven() {
+        return value % 2 == 0;
+    }
+
+    public boolean isOdd() {
+        return !isEven();
+    }
+
+    public static boolean isEven(int value) {
+        return value % 2 == 0;
+    }
+
+    public static boolean isOdd(int value) {
+        return !isEven(value);
+    }
+
 }
