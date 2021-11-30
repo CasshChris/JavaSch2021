@@ -1,17 +1,14 @@
 {
     "java.project.sourcePaths": [
-        "wk10",
         "wk9",
         "wk8",
         "wk7",
         "wk6",
         "wk5",
         "wk4",
-        "wk3/Assignment_3-33",
-        "wk3/Assignment_3-25",
-        "wk3/Assignment_3-17",
-        "wk3/Assignment_3-1",
-        "testing_class"
+        "wk10",
+        "testing_class",
+        "testing"
     ],
     "maven.view": "flat"
 }

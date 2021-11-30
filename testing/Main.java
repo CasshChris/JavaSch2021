@@ -12,6 +12,23 @@ public class Main {
         // wk9
         System.out.println("\n ~ Wk9 Package ~ ");
 
+        printRec();
+        
+        printAcc();
+        
+        printLinEqu();
+
+        // wk10
+        System.out.println("\n\n ~ Wk10 Package ~ ");
+        
+        printMInt();
+
+        printMRec2D();
+        
+    }
+
+    // wk9
+    public static void printRec() {
         // ~ Rectangle Class ~ 
         System.out.println("\n ~~ Retangle Class ~~ \n");
         Rectangle rec = new Rectangle();
@@ -41,7 +58,9 @@ public class Main {
         System.out.printf("the Perimeter of the Rectangle 0 is %f \n", rec.getPerimeter());
         System.out.printf("the Perimeter of the Rectangle 1 is %f \n", rec1.getPerimeter());
         System.out.printf("the Perimeter of the Rectangle 2 is %f \n", rec2.getPerimeter());
-        
+    }
+
+    public static void printAcc() {
         // ~ Account Class ~ 
         System.out.println("\n ~~ Account Class ~~ \n");
         Account acc = new Account(1122, 20000);
@@ -63,7 +82,9 @@ public class Main {
         System.out.printf("\tAccount Balance: %.2f \n", acc.getBalance());
         System.out.printf("\tMonthly interest rate: %.2f \n", acc.getMouthlyInterestRate());
         System.out.println("\tDate account was created: " + acc.getDateCreated());
-        
+    }
+
+    public static void printLinEqu() {
         // ~ Linear Equation Class ~
         System.out.println("\n ~~ Linear Equation Class ~~ \n");
 
@@ -74,9 +95,10 @@ public class Main {
         } else {
             System.out.println("The equation has no solution.");
         }
+    }
 
-        // wk10
-        System.out.println("\n\n ~ Wk10 Package ~ ");
+    // wk10
+    public static void printMInt() {
         System.out.println("\n ~~ MyInteger Class ~~ ");
 
         /* ~ MyInteger ~ */
@@ -112,7 +134,9 @@ public class Main {
         System.out.println("\n ~ parseInt()");
         System.out.println("Parse int 100 string value == " + MyInteger.parseInt("100"));
         System.out.println("Parse int 150 char array value == " + MyInteger.parseInt("150".toCharArray()) + "\n");
+    }
 
+    public static void printMRec2D() {
         /* ~ MyRectangle2D ~ */
         System.out.println("\n ~~ MyRectangle2D Class ~~ ");
 
@@ -131,6 +155,7 @@ public class Main {
         System.out.println((r1.contains(3, 3) ? "Contains" : "Does not contain") + " the point (3, 3).");
         System.out.println((r1.contains(new MyRectangle2D(4, 5, 10.5, 3.2)) ? "Contains" : "Does not contain") + " the rectangle with points (4, 5, 10.5, 3.2)");
         System.out.println((r1.overlaps(new MyRectangle2D(3, 5, 2.3, 5.4)) ? "Overlaps" : "Does not overlap") + " the rectangle with points (3, 5, 2.3, 5.4)\n");
-
     }
+
+
 }
