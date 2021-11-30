@@ -8,28 +8,28 @@ This repository will used to store the source code for my assigments in CIS 144
 
 ---
 
-- [x] [Assignment 1.1](wk1/Assignment_1-1/Welcome.java "Welcome.java")
-- [x] [Assignment 1.3](wk1/Assignment_1-3/patternJava.java "JavaPattern.java")
-- [x] [Assignment 1.5](wk1/Assignment_1-5/ComputeExpression.java "ComputeExpression.java")
-- [x] [Assignment 1.8](wk1/Assignment_1-8/AreaAndPerimeter.java "AreaAndPerimeter.java")
+- [x] [Assignment 1.1](wk1/Welcome.java "Welcome.java")
+- [x] [Assignment 1.3](wk1/JavaPattern.java "JavaPattern.java")
+- [x] [Assignment 1.5](wk1/ComputeExpression.java "ComputeExpression.java")
+- [x] [Assignment 1.8](wk1/AreaAndPerimeter.java "AreaAndPerimeter.java")
 
 ### Wk2
 
 ---
 
-- [x] [Assignment 2.9](wk2/Assignment_2-9/AverageAcceleration.java "AverageAcceleration.java")
-- [x] [Assignment 2.15](wk2/assignment_2-15/DistanceOfTwoPoints.java "DistanceOfTwoPoints.java")
-- [x] [Assignment 2.19](wk2/Assignment_2-19/AreaOfATriangle.java "AreaOfATriangle.java")
-- [x] [Assignment 2.21](wk2/Assignment_2-21/CalculateFuturesValue.java "CalculateFuturesValue.java")
+- [x] [Assignment 2.9](wk2/AverageAcceleration.java "AverageAcceleration.java")
+- [x] [Assignment 2.15](wk2/DistanceOfTwoPoints.java "DistanceOfTwoPoints.java")
+- [x] [Assignment 2.19](wk2/AreaOfATriangle.java "AreaOfATriangle.java")
+- [x] [Assignment 2.21](wk2/CalculateFuturesValue.java "CalculateFuturesValue.java")
 
 ### Wk3
 
 ---
 
-- [x] [Assignment 3.1](wk3/Assignment_3-1/solveQuadratic.java "solveQuadratic.java")
-- [x] [Assignment 3.17](wk3/Assignment_3-17/RPS.java "RPS.java")
-- [x] [Assignment 3.25](wk3/Assignment_3-25/IntersectingPoints.java "IntersectingPoints.java")
-- [x] [Assignment 3.33](wk3/Assignment_3-33/CompareCost.java "CompareCost.java")
+- [x] [Assignment 3.1](wk3/solveQuadratic.java "solveQuadratic.java")
+- [x] [Assignment 3.17](wk3/RPS.java "RPS.java")
+- [x] [Assignment 3.25](wk3/IntersectingPoints.java "IntersectingPoints.java")
+- [x] [Assignment 3.33](wk3/CompareCost.java "CompareCost.java")
 
 ### Wk4
 
