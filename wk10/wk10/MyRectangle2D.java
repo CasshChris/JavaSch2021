@@ -78,17 +78,17 @@ public class MyRectangle2D {
     }
     
     /* ~ Booleans ~ */
-    // if the 
+    // if the the points are in the rectangle then the method will return true, if not then it will return false
 	public boolean contains(double x, double y) {
         return getDistance(this.y, y) <= height / 2 && getDistance(this.x, x) <= width / 2; 
 	}
     
-    // 
+    // if the the points are in the rectangle then the method will return true, if not then it will return false
 	public boolean contains(MyRectangle2D r) {
 		return getDistance(y, r.getY()) + r.getHeight() / 2 <= height / 2 && getDistance(x, r.getX()) + r.getWidth() / 2 <= width / 2 && height / 2 + r.getHeight() / 2 <= height && width / 2 + r.getWidth() / 2 <= width;
 	}
 
-    // if two rectangles overlap then this method will return true
+    // if two rectangles overlap then this method will return true, if not then it will return false
 	public boolean overlaps(MyRectangle2D r) {
 		return !contains(r) && ((x + width / 2 > r.getX() - r.getWidth()) || (y + height / 2 > r.getY() - r.getHeight())) && (getDistance(y, r.getY()) < height / 2 + r.getHeight() / 2) && (getDistance(x, r.getX()) < width / 2 + r.getWidth() / 2);
 	}
