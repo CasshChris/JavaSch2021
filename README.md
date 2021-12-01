@@ -1,6 +1,7 @@
 # JavaSch
 
-This repository will used to store the source code for my assigments in CIS 144
+This repository will used to store the source code for my assigments in CIS 144.
+In the future I might re-write everthing that I have done up to this point &/or complete the full book
 
 ## Homework todo list
 
