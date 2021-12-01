@@ -51,8 +51,8 @@ public class MyInteger {
 
     // Static
     // the versons of these methods can be called from the class with needing to create a class object
-    public boolean equals(int value) {
-        return this.value == value;
+    public static boolean equals(int value) {
+        return value == value;
     }
     
     public static boolean isEven(int value) {
@@ -87,17 +87,24 @@ public class MyInteger {
     }
 
     /* ~ String Convertion ~ */
-    public static int parseInt(char[] value) {
-        double valueDouble = 0;
-        int toPower = value.length - 1;
-        for (char e : value) {
-            valueDouble += Math.pow(10, toPower--) * (e - '0');
-        }
-        return (int)valueDouble;
+    // converts an array of numeric characters to an int value
+    public static int parseInt(char[] charValue) {
+        int value = 0;
+		for (int i = 0, j = (int)Math.pow(10, charValue.length - 1); 
+			  i < charValue.length; i++, j /= 10) {
+			value += (charValue[i]- 48) * j;
+		}
+		return value;
     }
 
-    public static int parseInt(String value) {
-        return parseInt(value.toCharArray());
+    // Converts a string into an int value
+    public static int parseInt(String strValue) {
+        int value = 0;
+		for (int i = 0, j = (int)Math.pow(10, strValue.length() - 1); 
+			  i < strValue.length(); i++, j /= 10) {
+			value += (strValue.charAt(i) - 48) * j;
+		}
+		return value;
     }
 
 }

@@ -2,8 +2,8 @@
 // this class program will set & get x, y, width, height
 // + computes the area & the perimeter of a rectangle
 // + computes the distance between two points
-// + check if another reactangle is in the rectangle
-// + check if another reactangle overlaps with the rectangle
+// + check if another rectangle is in the rectangle
+// + check if another rectangle overlaps with the rectangle
 package wk10;
 
 public class MyRectangle2D {
